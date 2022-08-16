@@ -12,11 +12,14 @@ pip install meobook
 ```Python
 from MeoBook import MeoBook
 meobook = MeoBook()
-#List of 5 books fetch from google
+#the search method will return maximum of 5 books by default in a list of Book object 
 list_of_book = meobook.search_book("git hub cheat sheet")
 
 #Download one book
-book1 = list_of_book.download("/your/destination/path")
+book1 = list_of_book[0].download("/your/destination/path")
+
+
+#
 ```
 ## Docs
 ### Methods in MeoBook object
