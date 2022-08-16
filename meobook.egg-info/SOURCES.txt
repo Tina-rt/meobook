@@ -1,0 +1,9 @@
+README.md
+setup.py
+meoBook/__init__.py
+meoBook/meobook.py
+meobook.egg-info/PKG-INFO
+meobook.egg-info/SOURCES.txt
+meobook.egg-info/dependency_links.txt
+meobook.egg-info/requires.txt
+meobook.egg-info/top_level.txt

@@ -3,14 +3,14 @@ from pathlib import Path
 
 this_directory = Path(__file__).parent
 
-VERSION = '0.0.7' 
+VERSION = '0.0.9' 
 DESCRIPTION = 'Module to search and download a book from the internet'
 LONG_DESCRIPTION = (this_directory / "README.md").read_text()
 
 # Setting up
 setup(
        # the name must match the folder name 'verysimplemodule'
-        name="MeoBook", 
+        name="meobook", 
         version=VERSION,
         author="Tina Ratolojanahary",
         author_email="<rtinahubert@gmail.com>",
@@ -22,8 +22,10 @@ setup(
         install_requires=['bs4', 'requests'], # add any additional packages that 
         # needs to be installed along with your package. Eg: 'caer'
         url="https://github.com/Tina-rt/meobook",
-        
-        keywords=['python', 'download book', 'pdf downloader', 'book search engine'],
+        project_urls = {
+            'Github': 'https://github.com/Tina-rt/meobook'
+        },
+        keywords=['module to download pdf ', 'python download book', 'pdf downloader', 'book search engine module'],
         classifiers= [
             "Development Status :: 3 - Alpha",
             "Intended Audience :: Education",
