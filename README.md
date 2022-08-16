@@ -11,7 +11,7 @@ pip install meobook
 ## Usage
 ```Python
 from MeoBook import MeoBook
-meobook = Meobook()
+meobook = MeoBook()
 #List of 5 books fetch from google
 list_of_book = meobook.search_book("git hub cheat sheet")
 
