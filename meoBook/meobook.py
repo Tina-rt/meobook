@@ -50,7 +50,7 @@ class Book:
 
         if os.path.exists(directory):
 
-            with open(os.path.join(directory, self.title+'.'+self.filetype), 'wb') as file:
+            with open(os.path.join(directory, self.title+'.pdf'), 'wb') as file:
                 file.write(r.content)
         else:
             raise MeoBookError(f"This path {directory} does not exists")
