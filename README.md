@@ -10,7 +10,7 @@ pip install meobook
 ```
 ## Usage
 ```Python
-from MeoBook import MeoBook
+from meoBook import MeoBook
 meobook = MeoBook()
 #the search method will return maximum of 5 books by default in a list of Book object 
 list_of_book = meobook.search_book("git hub cheat sheet")
