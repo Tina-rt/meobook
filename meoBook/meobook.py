@@ -62,7 +62,6 @@ class MeoBook():
 
         Used for fetching books by searching it
 
-        By Default, filetype will be pdf. But can be changed with self.set_file_type_epub(self) function
 
     """
 
@@ -82,7 +81,7 @@ class MeoBook():
         rslt = []
         for j in range(limit):
 
-            url = f'https://google.com/search?q={replace_key(keyword)+self.filetype}&start={(j-1)*10}'
+            url = f'https://google.com/search?q={replace_key(keyword)+self.filetype}%20filetype=pdf&start={(j-1)*10}'
 
             # Perform the request
             request = urllib.request.Request(url)
@@ -138,3 +137,4 @@ class MeoBook():
                     pass
 
         return rslt
+

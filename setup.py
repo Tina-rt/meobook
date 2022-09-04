@@ -3,7 +3,7 @@ from pathlib import Path
 
 this_directory = Path(__file__).parent
 
-VERSION = '0.0.9' 
+VERSION = '0.1.0' 
 DESCRIPTION = 'Module to search and download a book from the internet'
 LONG_DESCRIPTION = (this_directory / "README.md").read_text()
 
